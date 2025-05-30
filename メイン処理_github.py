@@ -359,7 +359,7 @@ def compute_optimal_clusters(data, max_clusters: int = 6) -> int:
     """
     エルボー法で最適クラスタ数を推定
     """
-    distortions = []
+    distortions = []                                                      # SSE
     K = range(1, min(max_clusters + 1, len(data)))
 
     for k in K:
